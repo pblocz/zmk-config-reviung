@@ -88,7 +88,7 @@
             label = "HOMEROW_LAYERS";
             #binding-cells = <2>;
             tapping-term-ms = <150>;
-            quick_tap_ms = <0>;
+            quick_tap_ms = <50>;
             flavor = "tap-preferred";
             bindings = <&mo>, <&kp>;
         };
@@ -98,6 +98,13 @@
             #binding-cells = <0>;
             bindings = <&kp Z>, <&kp TAB>;
             mods = <(MOD_LALT | MOD_RALT)>;
+        };
+        tabspace: tab_space {
+            compatible = "zmk,behavior-mod-morph";
+            label = "TAB_SPACE";
+            #binding-cells = <0>;
+            bindings = <&mt LSHFT SPACE>, <&kp TAB>;
+            mods = <(MOD_LALT | MOD_RALT | MOD_LCTRL | MOD_RCTRL)>;
         };
     };
 
