@@ -45,5 +45,5 @@ jobs:
       - name: Archive (Reviung41)
         uses: actions/upload-artifact@v2
         with:
-          name: reviung41-firmware-${{env.GITHUB_RUN_NUMBER}}
+          name: reviung41-firmware-${{github.run_number}}
           path: reviung41_nice_nano_v2.uf2
