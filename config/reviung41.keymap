@@ -150,4 +150,5 @@
                           &bootloader         &trans   &trans   &bt BT_PRV &bt BT_NXT
             >;
         };
+     };
 };
