@@ -45,5 +45,5 @@ jobs:
       - name: Archive (Reviung41)
         uses: actions/upload-artifact@v2
         with:
-          name: firmware
+          name: reviung41-firmware-$(BUILD_NUMBER)
           path: reviung41_nice_nano_v2.uf2
