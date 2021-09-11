@@ -128,19 +128,19 @@
             >;
         };
 
-                lower_layer {
+        num_mods {
 // ----------------------------------------------------------------------------------
 // |    |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  |    DEL    |
 // |    |  _  |  +  |  {  |  }  | "|" |   | LFT | DWN |  UP | RGT |  `  |     ~     |
 // |    | ESC | GUI | ALT | CAPS|  "  |   | HOME| END | PGUP| PGDN| PRSC| SHFT(RET) |
 //                       |     |     | RET | ADJ |     |
-                        bindings = <
-   &trans &kp EXCL  &kp AT      &kp HASH &kp DLLR &kp PRCNT      &kp CARET &kp AMPS &kp N8    &kp LPAR  &kp RPAR  &kp DEL
-   &trans &kp MINUS &kp KP_PLUS &kp LBRC &kp RBRC &kp PIPE       &kp LEFT  &kp DOWN &kp UP    &kp RIGHT &kp GRAVE &kp GRAVE
-   &trans &kp ESC   &kp LGUI    &kp LALT &kp CLCK &kp SQT        &kp HOME  &kp END  &kp PG_UP &kp PG_DN &kp PSCRN &mt RSHFT RET
-                                 &trans      &trans       &kp RET        &mo 3       &trans
-                        >;
-                };
+            bindings = <
+    &kp GRAVE &mt F1 N1 &mt F2 N2   &mt F3 N3    &mt F4 N4      &mt F5 N5     &mt F6 N6        &mt F7 N7      &mt F8 N8    &mt F9 N9    &mt F10 N0   &mt F12 F11
+    &kp TAB   &kp EXCL  &kp AT      &kp HASH     &kp DLLR       &kp PRCNT     &kp CARET        &kp AMPS       &kp STAR     &kp LPAR     &kp RPAR     &kp PSCRN
+    &kp LSHFT &none     &none       &none        &mt LBRC LBKT  &mt RBRC RBKT &mt UNDER MINUS  &mt PLUS EQUAL &kp PG_DN    &kp HOME     &kp END      &kp ENTER
+                     &reset       &kp DEL        &trans       &mo BT_CTRL    &kp LEFT
+            >;
+        };
 
                 raise_layer {
 // -----------------------------------------------------------------------------------------
