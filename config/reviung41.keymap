@@ -56,6 +56,16 @@
             key-positions = <16 19>;
             bindings = <&kp AT>;
         };
+        combo_amps {
+            timeout-ms = <50>;
+            key-positions = <15 20>;
+            bindings = <&kp AMPS>;
+        };
+        combo_EXCL {
+            timeout-ms = <50>;
+            key-positions = <17 18>;
+            bindings = <&kp EXCL>;
+        };
         combo_equal {
             timeout-ms = <50>;
             key-positions = <19 8>;
@@ -80,6 +90,16 @@
             timeout-ms = <50>;
             key-positions = <27 28>;
             bindings = <&mt BSLH PIPE>;
+        };
+        combo_lbkt2 {
+            timeout-ms = <50>;
+            key-positions = <15 17>;
+            bindings = <&mt LBRC LBKT>;
+        };
+        combo_rbkt2 {
+            timeout-ms = <50>;
+            key-positions = <18 20>;
+            bindings = <&mt RBRC RBKT>;
         };
     };
 
@@ -138,9 +158,9 @@
 //                 };
 
             bindings = <
-    &kp TAB    &kp Q     &kp W      &kp E     &kp R              &kp T             &kp Y     &kp U              &kp I        &kp O      &kp P           &mt TILDE GRAVE
-    &kp ESC    &hm ESC A &hm LGUI S &kp D     &hl NUM_MODS F     &kp G             &kp H     &hl NUM_MODS J     &kp K        &kp L      &mt SQT DQT     &mt SEMI COLON
-    &kp LSFT   &tabz     &kp X      &kp C     &kp V              &kp B             &kp N     &kp M              &mt LT COMMA &mt GT DOT &mt QMARK FSLH  &mt PIPE BSLH
+    &none    &kp Q     &kp W      &kp E     &kp R              &kp T             &kp Y     &kp U              &kp I        &kp O      &kp P           &none
+    &kp ESC  &hm ESC A &hm LGUI S &kp D     &hl NUM_MODS F     &kp G             &kp H     &hl NUM_MODS J     &kp K        &kp L      &mt SQT DQT     &mt SEMI COLON
+    &none    &tabz     &kp X      &kp C     &kp V              &kp B             &kp N     &kp M              &mt LT COMMA &mt GT DOT &mt QMARK FSLH  &none
                            &kp LCTRL &lt NUM_MODS BSPC  &tabspace  &lt BT_CTRL ENTER  &kp LALT
             >;
         };
@@ -152,9 +172,9 @@
 // |    | ESC | GUI | ALT | CAPS|  "  |   | HOME| END | PGUP| PGDN| PRSC| SHFT(RET) |
 //                       |     |     | RET | ADJ |     |
             bindings = <
-    &kp GRAVE &mt F1 N1 &mt F2 N2   &mt F3 N3    &mt F4 N4      &mt F5 N5     &mt F6 N6        &mt F7 N7      &mt F8 N8    &mt F9 N9    &mt F10 N0   &mt F12 F11
-    &kp TAB   &kp EXCL  &kp AT      &kp HASH     &kp DLLR       &kp PRCNT     &kp CARET        &kp AMPS       &kp STAR     &kp LPAR     &kp RPAR     &kp PSCRN
-    &kp LSHFT &none     &none       &none        &mt LBRC LBKT  &mt RBRC RBKT &mt UNDER MINUS  &mt PLUS EQUAL &kp PG_DN    &kp HOME     &kp END      &kp ENTER
+    &kp GRAVE &mt F1 N1 &mt F2 N2   &mt F3 N3    &mt F4 N4      &mt F5 N5     &mt F6 N6        &mt F7 N7      &mt F8 N8    &mt F9 N9    &mt F10 N0      &mt F12 F11
+    &kp TAB   &kp EXCL  &kp AT      &kp HASH     &kp DLLR       &kp PRCNT     &kp CARET        &kp AMPS       &kp STAR     &kp LPAR     &mt SEMI COLON  &kp PSCRN
+    &kp LSHFT &none     &none       &none        &mt LBRC LBKT  &mt RBRC RBKT &mt UNDER MINUS  &mt PLUS EQUAL &kp PG_DN    &kp HOME     &kp END         &kp ENTER
                      &reset       &kp DEL        &trans       &mo BT_CTRL    &kp LEFT
             >;
         };
