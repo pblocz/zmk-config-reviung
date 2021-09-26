@@ -173,7 +173,7 @@
             bindings = <
     &kp LC(C)  &kp Q     &kp W      &kp E     &kp R              &kp T             &kp Y     &kp U              &kp I        &kp O      &kp P           &kp LG(LEFT)
     &kp ESC    &hm ESC A &hm LGUI S &kp D     &hl NUM_MODS F     &kp G             &kp H     &hl NUM_MODS J     &kp K        &kp L      &mt SQT DQT     &kp LG(RIGHT)
-    &kp LC(V)  &kp TAB   &kp X      &kp C     &kp V              &kp B             &kp N     &kp M              &mt LT COMMA &mt GT DOT &mt QMARK FSLH  &kp LG(UP)
+    &kp LC(V)  &kp Z     &kp X      &kp C     &kp V              &kp B             &kp N     &kp M              &mt LT COMMA &mt GT DOT &mt QMARK FSLH  &kp LG(UP)
                            &kp LCTRL &lt NUM_MODS BSPC  &tabspace  &lt BT_CTRL ENTER  &kp LALT
             >;
         };
