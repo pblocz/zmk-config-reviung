@@ -18,88 +18,108 @@
         compatible = "zmk,combos";
         combo_esc {
             timeout-ms = <50>;
-            key-positions = <15 16>;
+            key-positions = <15 16>; // KP: D F
             bindings = <&kp ESC>;
         };
         combo_tab {
             timeout-ms = <50>;
-            key-positions = <19 20>;
+            key-positions = <19 20>; // KP: J K
             bindings = <&kp TAB>;
         };
         combo_lpar {
             timeout-ms = <50>;
-            key-positions = <15 28>;
+            key-positions = <15 28>; // KP: D V
             bindings = <&kp LPAR>;
         };
         combo_rpar {
             timeout-ms = <50>;
-            key-positions = <20 31>;
+            key-positions = <20 31>; // KP: K M
             bindings = <&kp RPAR>;
         };
         combo_lbkt {
             timeout-ms = <50>;
-            key-positions = <14 15>;
+            key-positions = <14 15>; // KP: S D
             bindings = <&mt LBRC LBKT>;
         };
         combo_rbkt {
             timeout-ms = <50>;
-            key-positions = <20 21>;
+            key-positions = <20 21>; // KP: K L
             bindings = <&mt RBRC RBKT>;
         };
         combo_minus {
             timeout-ms = <50>;
-            key-positions = <16 3>;
+            key-positions = <16 3>; // KP: E F
             bindings = <&mt UNDER MINUS>;
         };
         combo_at {
             timeout-ms = <50>;
-            key-positions = <16 19>;
+            key-positions = <16 19>; // KP: F J
             bindings = <&kp AT>;
         };
         combo_amps {
             timeout-ms = <50>;
-            key-positions = <15 20>;
+            key-positions = <15 20>; // KP: D K
             bindings = <&kp AMPS>;
         };
         combo_EXCL {
             timeout-ms = <50>;
-            key-positions = <17 18>;
+            key-positions = <17 18>; // KP: G H
             bindings = <&kp EXCL>;
         };
         combo_equal {
             timeout-ms = <50>;
-            key-positions = <19 8>;
+            key-positions = <19 8>; // KP: I J
             bindings = <&mt PLUS EQUAL>;
         };
         combo_dollar {
             timeout-ms = <50>;
             key-positions = <3 4>;
-            bindings = <&kp DLLR>;
+            bindings = <&kp DLLR>; // KP: E R
         };
         combo_percent {
             timeout-ms = <50>;
-            key-positions = <7 8>;
+            key-positions = <7 8>; // KP: U I
             bindings = <&kp PRCNT>;
         };
         combo_grave {
             timeout-ms = <50>;
-            key-positions = <31 32>;
+            key-positions = <31 32>; // KP: M ,
             bindings = <&mt TILDE GRAVE>;
         };
         combo_pipe {
             timeout-ms = <50>;
-            key-positions = <27 28>;
+            key-positions = <27 28>; // KP: C V
             bindings = <&mt BSLH PIPE>;
         };
         combo_lbkt2 {
             timeout-ms = <50>;
-            key-positions = <15 17>;
+            key-positions = <15 17>; // KP: D G
             bindings = <&mt LBRC LBKT>;
         };
         combo_rbkt2 {
             timeout-ms = <50>;
-            key-positions = <18 20>;
+            key-positions = <18 20>; // KP: H K
             bindings = <&mt RBRC RBKT>;
+        };
+        combo_under {
+            timeout-ms = <50>;
+            key-positions = <4 15>; // KP: R D
+            bindings = <&kp under>;
+        };
+        combo_plus {
+            timeout-ms = <50>;
+            key-positions = <7 20>; // KP: U K
+            bindings = <&kp PLUS>;
+        };
+        combo_hash {
+            timeout-ms = <50>;
+            key-positions = <4 19>; // KP: R J
+            bindings = <&kp HASH>;
+        };
+        combo_star {
+            timeout-ms = <50>;
+            key-positions = <7 16>; // KP: U K
+            bindings = <&kp STAR>;
         };
     };
 
@@ -118,7 +138,7 @@
             label = "HOMEROW_LAYERS";
             #binding-cells = <2>;
             tapping-term-ms = <150>;
-            quick_tap_ms = <50>;
+            quick_tap_ms = <100>;
             flavor = "tap-preferred";
             bindings = <&mo>, <&kp>;
         };
@@ -174,7 +194,7 @@
             bindings = <
     &none     &mt F1 N1   &mt F2 N2   &mt F3 N3    &mt F4 N4      &mt F5 N5     &mt F6 N6    &mt F7 N7    &mt F8 N8    &mt F9 N9    &mt F10 N0      &mt F12 F11
     &kp TAB   &mt F4 N4   &mt F5 N5   &mt F6 N6    &none          &none         &none        &kp HASH     &kp STAR     &kp CARET    &mt SEMI COLON  &kp PSCRN
-    &reset    &mt F7 N7   &mt F8 N8   &mt F9 N9    &mt F10 N0     &none         &none        &none        &kp PG_DN    &kp HOME     &kp END         &none
+    &reset    &mt F7 N7   &mt F8 N8   &mt F9 N9    &mt F10 N0     &none         &none        &none        &trans       &trans       &trans          &none
                                   &trans    &kp DEL  &trans     &none          &trans
             >;
         };
